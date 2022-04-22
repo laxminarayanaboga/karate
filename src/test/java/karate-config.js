@@ -26,8 +26,8 @@ function fn() {
 		config.baseURL = 'https://reqres.in/api'
 	}
 
-	karate.configure('connectTimeout', 5000);
-	karate.configure('readTimeout', 5000);
+	karate.configure('connectTimeout', 50000);
+	karate.configure('readTimeout', 50000);
 
 	//var result = karate.callSingle('classpath:tests/GetUserID.feature') 
 	//config.userID = result.id;
