@@ -5,7 +5,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>My Karate</name>
 	<description>Karate test automation framework</description>
-
+	
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-core -->
 		<dependency>
@@ -29,4 +33,23 @@
 		</dependency>
 
 	</dependencies>
+
+	<build>
+		<testResources>
+			<testResource>
+				<directory>src/test/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
