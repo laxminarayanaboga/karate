@@ -5,7 +5,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>My Karate</name>
 	<description>Karate test automation framework</description>
-	
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -24,13 +24,13 @@
 			<version>0.9.6</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit4 -->
+		<!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5 -->
 		<dependency>
 			<groupId>com.intuit.karate</groupId>
-			<artifactId>karate-junit4</artifactId>
+			<artifactId>karate-junit5</artifactId>
 			<version>1.1.0</version>
-			<scope>test</scope>
 		</dependency>
+
 
 	</dependencies>
 
