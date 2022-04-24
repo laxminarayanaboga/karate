@@ -11,7 +11,7 @@ public class TestRunnerWithJunit5 {
 
 	@Karate.Test
 	Karate testTags() {
-		return Karate.run("tags").tags("@second").relativeTo(getClass());
+		return Karate.run("ChainingExample").tags("@debug").relativeTo(getClass());
 	}
 
 	@Karate.Test

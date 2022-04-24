@@ -23,7 +23,7 @@ Scenario Outline: Get example using ScenarioOutline and Examples
 		|9|9|
 		|10|10|
 		
-		
+@skipme 
 Scenario Outline: Get example using delayed responed API 
 	Given url 'https://reqres.in/api/users?delay=<delay>' 
 	When method GET 
