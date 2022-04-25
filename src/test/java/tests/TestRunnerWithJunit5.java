@@ -15,6 +15,16 @@ public class TestRunnerWithJunit5 {
 	}
 
 	@Karate.Test
+	Karate testMyJsonExpressions() {
+		return Karate.run("MyJsonExpressions").relativeTo(getClass());
+	}
+	
+	@Karate.Test
+	Karate testJavascriptExamples() {
+		return Karate.run("javascriptExamples").relativeTo(getClass());
+	}
+
+	@Karate.Test
 	Karate testFullPath() {
 		return Karate.run("classpath:karate/tags.feature").tags("@first");
 	}
