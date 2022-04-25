@@ -13,7 +13,7 @@ Scenario: Get example using karate multiple tests
 	When method post 
 	Then status 201 
 	And def newUserId = $.id
-	Given url 'https://reqres.in/api/users/' + newUserId
+	Given path 'api', 'users', newUserId
 	And def newName = 'abcd' + randomString
 	And request { name: '#(newName)',job: 'new leader' } 
 	When method put 

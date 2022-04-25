@@ -8,6 +8,11 @@ public class TestRunnerWithJunit5 {
 	Karate testSample() {
 		return Karate.run("sample").relativeTo(getClass());
 	}
+	
+	@Karate.Test
+	Karate testPostExample() {
+		return Karate.run("postExample").relativeTo(getClass());
+	}
 
 	@Karate.Test
 	Karate testTags() {
@@ -23,6 +28,12 @@ public class TestRunnerWithJunit5 {
 	Karate testJavascriptExamples() {
 		return Karate.run("javascriptExamples").relativeTo(getClass());
 	}
+	
+	@Karate.Test
+	Karate testReadingFiles() {
+		return Karate.run("readingFiles").relativeTo(getClass());
+	}
+	
 
 	@Karate.Test
 	Karate testFullPath() {
