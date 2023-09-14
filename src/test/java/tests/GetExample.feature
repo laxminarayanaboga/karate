@@ -1,3 +1,4 @@
+@debug
 Feature: Get Example using Karate
 
   Scenario: Get example using karate
