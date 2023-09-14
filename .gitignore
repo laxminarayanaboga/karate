@@ -19,3 +19,6 @@ buildNumber.properties
 *.jar
 *.war
 *.ear
+
+.idea/
+target/
