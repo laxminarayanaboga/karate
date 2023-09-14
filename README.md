@@ -1,4 +1,4 @@
-# karate
+# karate - API test automation
 
 This is a sample Java project on how to use Karate test automation framework. 
 
@@ -14,3 +14,5 @@ detailed usage example: mvn test "-Dkarate.options=--tags ~@skipme classpath:dem
 
 To Run Parallel: 
 mvn test -Dtest=TestParallel#testParallel
+
+
