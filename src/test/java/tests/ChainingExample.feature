@@ -6,7 +6,7 @@ Background:
 	* def random = function(max){ return Math.floor(Math.random() * max) + 1 }
 	* string randomString = random(99999) + ''; 
 
-@debug 
+
 Scenario: Get example using karate multiple tests 
 	Given url 'https://reqres.in/api/users' 
 	And request { name: '#(randomString)',job: 'leader' } 
