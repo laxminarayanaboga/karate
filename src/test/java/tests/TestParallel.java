@@ -9,10 +9,13 @@ import com.intuit.karate.Runner;
 
 class TestParallel {
 
-	@Test
-	void testParallel() {
-		Results results = Runner.path("classpath:tests").tags("~@skipme").parallel(15);
-		assertEquals(0, results.getFailCount(), results.getErrorMessages());
-	}
+    @Test
+    void testParallel() {
+        Results results = Runner.path("classpath:tests")
+                .tags("~@skipme")
+                .karateEnv("qa")
+                .parallel(15);
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
+    }
 
 }

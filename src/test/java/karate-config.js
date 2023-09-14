@@ -11,9 +11,9 @@ function fn() {
     if (!env) {
         config.baseURL = 'https://reqres.in/api'
     }
-    if (env == 'qa') {
-        config.baseURL = 'https://reqres.in/api/qa'
-    } else if (env == 'dev') {
+    if (env === 'qa') {
+        config.baseURL = 'https://reqres.in/api/'
+    } else if (env === 'dev') {
         config.baseURL = 'https://reqres.in/api/dev'
     } else {
         config.baseURL = 'https://reqres.in/api'
